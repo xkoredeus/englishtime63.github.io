@@ -36,6 +36,9 @@ section {
   display: -ms-flex;
   display: -o-flex;
   display: flex;
+  font-weight: normal;
+  text-align: center;
+  
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
