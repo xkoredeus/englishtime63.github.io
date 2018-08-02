@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Century';
+    src: url('CenturyGothic.woff2') format('woff2'),
+        url('CenturyGothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Century-Bold';
+    src: url('CenturyGothic-Bold.woff2') format('woff2'),
+        url('CenturyGothic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Nautilus';
+    src: url('NautilusPompilius.woff2') format('woff2'),
+        url('NautilusPompilius.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
