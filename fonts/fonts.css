@@ -21,3 +21,8 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+    font-family: 'wg';
+    src: url('wg.ttf');
+}

@@ -13,7 +13,7 @@ $('.benefits__inner').owlCarousel({
       loop: false,
       dots: false,
       navText: ["", ""],
-      navClass: ['slider__arrow-prev', 'slider__arrow-next'],
+      navClass: ['slider__arrow-prev', 'slider__arrow-next']
 
   });
 });
@@ -104,12 +104,35 @@ $(document).ready(function() {
 
 //Tabs
 (function($) {
-  $(function() {
-    $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
-      $(this)
-        .addClass('active').siblings().removeClass('active')
-        .closest('.tabs').find('.tabs__content').hide().eq($(this).index()).fadeIn('slow');
-    });
+$(function() {
 
+  $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
+    $(this)
+      .addClass('active').siblings().removeClass('active')
+      .closest('.tabs').find('.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+  });
+
+});
+})(jQuery);
+
+//News slider
+$(window).on('load', function (){
+$('.news__slider').owlCarousel({
+      nav: true,
+      items: 1,
+      loop: false,
+      dots: false,
+      navText: ["", ""],
+      navClass: ['slider__arrow-prev', 'slider__arrow-next']
+  });
+});
+
+//Reviews slider
+$(window).on('load', function (){
+$('.reviews__slider').owlCarousel({
+      nav: false,
+      items: 1,
+      loop: false,
+      dots: true
   });
 });
