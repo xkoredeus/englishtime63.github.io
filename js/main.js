@@ -1,7 +1,11 @@
+
+//Clocks block
 $( ".langs__clocks-item_spain" ).hover(function() {
 $(".langs__clocks-arrow").toggleClass('spain');
 });
 
+
+//Benefits slider
 $(window).on('load', function (){
 $('.benefits__inner').owlCarousel({
       nav: true,
@@ -20,7 +24,7 @@ $('.benefits__inner').owlCarousel({
   });
 });
 
-
+//Teachers sync slider
 $(document).ready(function() {
 
   var sync1 = $(".teachers__top");
@@ -102,4 +106,29 @@ $(document).ready(function() {
     var number = $(this).index();
     sync1.data('owl.carousel').to(number, 300, true);
   });
+});
+
+//Tabs price
+$(".tabs-content__item").not(":first").hide();
+$(".tabs .tabs-list__item").click(function() {
+  $(".tabs .tabs-list__item").removeClass("active").eq($(this).index()).addClass("active");
+  $(".tabs-content__item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
+
+//Tabs price_-table 
+// $(".price-pay__cnt-item").not(":first").hide();
+// $(".price-pay__list-item").click(function() {
+//   $(".tabs .price-pay__list-item").removeClass("active").eq($(this).index()).addClass("active");
+//   $(".price-pay__cnt-item").hide().eq($(this).index()).fadeIn()
+// }).eq(0).addClass("active");
+
+
+$('[data-toggle]').on('click', function(){
+  var classToggle = $(this).attr('data-toggle');
+  var target = $(this).attr('data-target');
+  var takeAway = $(this).attr('data-take-away');
+  $(this).toggleClass('active');
+  $(takeAway).removeClass(classToggle);
+  console.log(classToggle, target, takeAway);
+  $(target).addClass(classToggle);
 });
