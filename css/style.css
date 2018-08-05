@@ -449,6 +449,10 @@ button:active{
                 max-width: 150px;
                 position: absolute;
                 opacity: 0;
+                -moz-transition: all .5s ease;
+                -webkit-transition-property: all;
+                -webkit-transition-duration: .5s;
+                -webkit-transition-timing-function: ease;
               }
 
 
@@ -1902,12 +1906,7 @@ button:active{
     padding-left: 0;
     list-style: none;
   }
-    /*.tabs > * {
-      -moz-transition: 0;
-      -webkit-transition-property: none;
-      -webkit-transition-duration: 0;
-      -webkit-transition-timing-function: none;
-    }*/
+
     .tabs__list li {
       font-family: 'Century-Bold';
       border: 1px solid #000;
