@@ -379,14 +379,32 @@ button:active{
             -webkit-transform-origin: 50% 50%;
             transform-origin: 50% bottom;
 
-            -moz-transform: translate(-48%, 103%) rotate(0deg);
-            -ms-transform: translate(-48%, 103%) rotate(0deg);
-            -webkit-transform: translate(-48%, 103%) rotate(0deg);
-            transform: translate(-48%, 103%) rotate(0deg);
+            -moz-transform: translate(-48%, 313%) rotate(0deg);
+            -ms-transform: translate(-48%, 313%) rotate(0deg);
+            -webkit-transform: translate(-48%, 313%) rotate(0deg);
+            transform: translate(-48%, 313%) rotate(0deg);
           }
             .langs__clocks-arrow img {
-              height: 127px;
+              height: 41px;
             }
+          /*.lang__clocks-ttl {
+            font-size: 22px;
+            line-height: 1.5;
+            font-family: 'Century-Bold';
+            text-transform: uppercase;
+            text-align: center;
+            max-width: 150px;
+            position: absolute;
+            opacity: 0;
+            -moz-transform-origin: 50% 50%;
+            -ms-transform-origin: 50% 50%;
+            -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% bottom;
+            -moz-transform: translate(78%, 225%) rotate(0deg);
+            -ms-transform: translate(78%, 225%) rotate(0deg);
+            -webkit-transform: translate(78%, 225%) rotate(0deg);
+            transform:translate(78%, 225%) rotate(0deg);
+          }*/
           .langs__clocks-item {
               position: absolute;
               border-radius: 50%;
@@ -408,7 +426,32 @@ button:active{
               background-size: contain;
               background-repeat: no-repeat;
               background-position: center;
+              position: relative;
             }
+              .langs__clocks-item-img:before {
+                position: absolute;
+                content: '';
+                width: 3px;
+                height: 96px;
+                background-color: #ff7780;
+                -moz-transition: all .7s ease;
+                -webkit-transition-property: all;
+                -webkit-transition-duration: .7s;
+                -webkit-transition-timing-function: ease;
+                opacity: 0;
+              }
+              .langs__clocks-item-img:after{
+                font-size: 22px;
+                line-height: 1.5;
+                font-family: 'Century-Bold';
+                text-transform: uppercase;
+                text-align: center;
+                max-width: 150px;
+                position: absolute;
+                opacity: 0;
+              }
+
+
             .langs__clocks-item_english {
               -moz-transform: translate(-48%, -100%) rotate(0deg);
               -ms-transform: translate(-48%, -100%) rotate(0deg);
@@ -418,6 +461,25 @@ button:active{
               .langs__clocks-item_english .langs__clocks-item-img {
                 background-image: url(../img/lang__item_england.png);
               }
+                .langs__clocks-item_english .langs__clocks-item-img:before {
+                  bottom: -108px;
+                  left: 47px;
+                  -moz-transform: rotate(0deg);
+                  -ms-transform: rotate(0deg);
+                  -webkit-transform: rotate(0deg);
+                  transform: rotate(0deg);
+                }
+                .langs__clocks-item_english .langs__clocks-item-img:after{
+                  content: 'Английский язык';
+                  -moz-transform-origin: 50% 50%;
+                  -ms-transform-origin: 50% 50%;
+                  -webkit-transform-origin: 50% 50%;
+                  transform-origin: 50% bottom;
+                  -moz-transform: translate(-17%, 405%) rotate(0deg);
+                  -ms-transform: translate(-17%, 405%) rotate(0deg);
+                  -webkit-transform: translate(-17%, 405%) rotate(0deg);
+                  transform: translate(-17%, 405%) rotate(0deg);
+                }
 
             .langs__clocks-item_spain {
               -moz-transform: translate(-50%, -100%) rotate(75deg);
@@ -432,6 +494,25 @@ button:active{
                 -webkit-transform: rotate(-75deg);
                 transform: rotate(-75deg);
               }
+                .langs__clocks-item_spain .langs__clocks-item-img:before {
+                  left: -60px;
+                  bottom: -28px;
+                  -moz-transform: rotate(78deg);
+                  -ms-transform: rotate(78deg);
+                  -webkit-transform: rotate(78deg);
+                  transform: rotate(78deg);
+                }
+                .langs__clocks-item_spain .langs__clocks-item-img:after{
+                  content: 'Испанский язык';
+                  -moz-transform-origin: 50% 50%;
+                  -ms-transform-origin: 50% 50%;
+                  -webkit-transform-origin: 50% 50%;
+                  transform-origin: 50% bottom;
+                  -moz-transform: translate(-138%, 204%) rotate(0deg);
+                  -ms-transform: translate(-138%, 204%) rotate(0deg);
+                  -webkit-transform: translate(-138%, 204%) rotate(0deg);
+                  transform: translate(-138%, 204%) rotate(0deg);
+                }
 
             .langs__clocks-item_france {
               -moz-transform: translate(-50%, -100%) rotate(141deg);
@@ -446,6 +527,25 @@ button:active{
                 -webkit-transform: rotate(-141deg);
                 transform: rotate(-141deg);
               }
+                .langs__clocks-item_france .langs__clocks-item-img:before {
+                  top: -94px;
+                  left: -27px;
+                  -moz-transform: rotate(-38deg);
+                  -ms-transform: rotate(-38deg);
+                  -webkit-transform: rotate(-38deg);
+                  transform: rotate(-38deg);
+                }
+                .langs__clocks-item_france .langs__clocks-item-img:after{
+                  content: 'Французский язык';
+                  -moz-transform-origin: 50% 50%;
+                  -ms-transform-origin: 50% 50%;
+                  -webkit-transform-origin: 50% 50%;
+                  transform-origin: 50% bottom;
+                  -moz-transform: translate(-92%, -78%) rotate(0deg);
+                  -ms-transform: translate(-92%, -78%) rotate(0deg);
+                  -webkit-transform: translate(-92%, -78%) rotate(0deg);
+                  transform: translate(-92%, -78%) rotate(0deg);
+                }
 
             .langs__clocks-item_china {
               -moz-transform: translate(-50%, -100%) rotate(220deg);
@@ -460,6 +560,25 @@ button:active{
                 -webkit-transform: rotate(-220deg);
                 transform: rotate(-220deg);
               }
+                .langs__clocks-item_china .langs__clocks-item-img:before {
+                  top: -94px;
+                  right: -27px;
+                  -moz-transform: rotate(42deg);
+                  -ms-transform: rotate(42deg);
+                  -webkit-transform: rotate(42deg);
+                  transform: rotate(42deg);
+                }
+                .langs__clocks-item_china .langs__clocks-item-img:after{
+                  content: 'Китайский язык';
+                  -moz-transform-origin: 50% 50%;
+                  -ms-transform-origin: 50% 50%;
+                  -webkit-transform-origin: 50% 50%;
+                  transform-origin: 50% bottom;
+                  -moz-transform: translate(76%, -75%) rotate(0deg);
+                  -ms-transform: translate(76%, -75%) rotate(0deg);
+                  -webkit-transform: translate(76%, -75%) rotate(0deg);
+                  transform: translate(76%, -75%) rotate(0deg);
+                }
 
             .langs__clocks-item_germany {
               -moz-transform: translate(-50%, -100%) rotate(-73deg);
@@ -474,45 +593,43 @@ button:active{
                 -webkit-transform: rotate(73deg);
                 transform: rotate(73deg);
               }
+                .langs__clocks-item_germany .langs__clocks-item-img:before {
+                  bottom: -31px;
+                  right: -60px;
+                  -moz-transform: rotate(-78deg);
+                  -ms-transform: rotate(-78deg);
+                  -webkit-transform: rotate(-78deg);
+                  transform: rotate(-78deg);
+                }
+                .langs__clocks-item_germany .langs__clocks-item-img:after{
+                  content: 'Немецкий язык';
+                  -moz-transform-origin: 50% 50%;
+                  -ms-transform-origin: 50% 50%;
+                  -webkit-transform-origin: 50% 50%;
+                  transform-origin: 50% bottom;
+                  -moz-transform: translate(137%, 212%) rotate(0deg);
+                  -ms-transform: translate(137%, 212%) rotate(0deg);
+                  -webkit-transform: translate(137%, 212%) rotate(0deg);
+                  transform: translate(137%, 212%) rotate(0deg);
+                }
 
-          .langs__clocks-item:hover {
+          .langs__clocks-item.active {
             border: 7px solid #fff;
             -webkit-box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.52);
             -moz-box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.52);
             box-shadow: 0px 0px 16px -3px rgba(0,0,0,0.52);
           }
+
             .langs__clocks-item:hover ~ .langs__clocks-item-img{
               -webkit-box-shadow: 0px 0px 43px -1px rgba(0,0,0,0.36);
               -moz-box-shadow: 0px 0px 43px -1px rgba(0,0,0,0.36);
               box-shadow: 0px 0px 43px -1px rgba(0,0,0,0.36);
             }
 
-
-            .langs__clocks-item_spain:hover ~ .langs__clocks-arrow {
-              -moz-transform: translate(-100%, 92%) rotate(78deg);
-              -ms-transform: translate(-100%, 92%) rotate(78deg);
-              -webkit-transform: translate(-100%, 92%) rotate(78deg);
-              transform: translate(-100%, 92%) rotate(78deg);
+            .langs__clocks-item.active .langs__clocks-item-img:before,
+            .langs__clocks-item.active .langs__clocks-item-img:after  {
+              opacity: 1;
             }
-            .langs__clocks-item_france:hover ~ .langs__clocks-arrow  {
-              -moz-transform: translate(-85%, 80%) rotate(138deg);
-              -ms-transform: translate(-85%, 80%) rotate(138deg);
-              -webkit-transform: translate(-85%, 80%) rotate(138deg);
-              transform: translate(-85%, 80%) rotate(138deg);
-            }
-            .langs__clocks-item_china:hover ~ .langs__clocks-arrow  {
-              -moz-transform: translate(-16%, 79%) rotate(218deg);
-              -ms-transform: translate(-16%, 79%) rotate(218deg);
-              -webkit-transform: translate(-16%, 79%) rotate(218deg);
-              transform: translate(-16%, 79%) rotate(218deg);
-            }
-            .langs__clocks-item_germany:hover ~ .langs__clocks-arrow  {
-              -moz-transform: translate(5%, 97%) rotate(289deg);
-              -ms-transform: translate(5%, 97%) rotate(289deg);
-              -webkit-transform: translate(5%, 97%) rotate(289deg);
-              transform: translate(5%, 97%) rotate(289deg);
-            }
-            
 .who {
   padding-top: 0;
   position: relative;
@@ -577,7 +694,7 @@ button:active{
       width: 100%;
       margin-bottom: 30px;
 
-
+      
       position: relative;
     }
     .board__item-bg {
@@ -588,12 +705,29 @@ button:active{
       }
 
       .board__item-img {
-        z-index: -1;
-        margin-right: 10px;
+        /*z-index: -1;*/
+        width: 35px;
+        height: 35px;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: contain;
       }
-        .board__item-img img {
-          max-width: 35px;
+        .board__item-img_1 {
+          background-image: url(../img/board__item-img_1.png);
         }
+        .board__item-img_2 {
+          background-image: url(../img/board__item-img_2.png);
+        }
+        .board__item-img_3 {
+          background-image: url(../img/board__item-img_3.png);
+        }
+        .board__item-img_4 {
+          background-image: url(../img/board__item-img_4.png);
+        }
+        .board__item-img_5 {
+          background-image: url(../img/board__item-img_5.png);
+        }
+
       .board__item-ttl {
         font-family: 'Century-Bold', sans-serif;
         font-size: 17px;
@@ -606,7 +740,7 @@ button:active{
       .board__item-price {
         font-family: 'Century-Bold', sans-serif;
         text-transform: uppercase;
-        font-size: 16px;
+        font-size: 0;
         color: #fff;
         opacity: 0;
         position: absolute;
@@ -625,7 +759,7 @@ button:active{
       position: absolute;
       border: 2px solid #333;
       border-radius: 7px;
-      padding: 17px 15px;
+      padding: 17px 0 17px 15px;
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
@@ -663,12 +797,28 @@ button:active{
     -webkit-transition-timing-function: ease;
   }
     .board__item:hover .board__item-img {
-      opacity: 0;
+      width: 45px;
+      height: 45px;
       -moz-transition: all 0.5s ease;
       -webkit-transition-property: all;
       -webkit-transition-duration: 0.5s;
       -webkit-transition-timing-function: ease;
     }
+      .board__item:hover .board__item-img_1 {
+        background-image: url(../img/board__item-img_1-hover.png);
+      }
+      .board__item:hover .board__item-img_2 {
+        background-image: url(../img/board__item-img_2-hover.png);
+      }
+      .board__item:hover .board__item-img_3 {
+        background-image: url(../img/board__item-img_3-hover.png);
+      }
+      .board__item:hover .board__item-img_4 {
+        background-image: url(../img/board__item-img_4-hover.png);
+      }
+      .board__item:hover .board__item-img_5 {
+        background-image: url(../img/board__item-img_5-hover.png);
+      }
     .board__item:hover .board__item-ttl {
       color: #fff;
       -moz-transition: all 1s ease;
@@ -677,7 +827,8 @@ button:active{
       -webkit-transition-timing-function: ease;
     }
     .board__item:hover .board__item-price {
-      position: static;
+      position: relative;
+      font-size: 16px;
       opacity: 1;
       z-index: 1;
       -moz-transition: all .7s ease;
@@ -888,6 +1039,7 @@ button:active{
       right: 0;
       bottom: 100px;
       text-align: right;
+      width: auto;
     }
       .level__bottom-ttl .section__title {
         text-align: right;
@@ -1118,6 +1270,50 @@ button:active{
           width: 15%;
           font-size: 15px;
         }
+
+.engage__item input[type="checkbox"] {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.checkbox {
+    position: relative;
+    padding: 0 0 0 25px;
+    cursor: pointer;
+}
+.checkbox:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid #949393;
+    background: #fff;
+    
+}
+.checkbox:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    background: #00c53e;
+    opacity: 0;
+    transform: scale(0);
+    transition: 0.2s;
+}
+
+.engage__item input[type="checkbox"]:checked + .checkbox:after {
+    opacity: 1;
+    transform: scale(1);
+}
+.engage__item input[type="checkbox"]:focus + .checkbox:before {
+  box-shadow: inset 0 1px 2px rgba(0,0,0,.2), 0 0 0 1px rgba(253, 235, 237, 0.56);
+}
         .engage__item-teacher {
           display: -webkit-flex;
           display: -moz-flex;
@@ -1695,7 +1891,7 @@ button:active{
     background-color: #ddebf6;
     z-index: -5;
   }
-  .tabs-list__item {
+  .price-tabs-list__item {
     font-family: 'Century-Bold';
     border: 1px solid #000;
     border-radius: 6px;
@@ -1704,7 +1900,7 @@ button:active{
     box-sizing: border-box;
     width: 190px;
   }
-    .tabs-list__item span {
+    .price-tabs-list__item span {
       text-align: center;
       height: 100%;
       width: 100%;
@@ -1721,12 +1917,12 @@ button:active{
       box-sizing: border-box;
       position: relative;
     }
-  .tabs-list__item.active {
+  .price-tabs-list__item.active {
     position: relative;
     border: 1px solid #579dd0;
     color: #fff;
   }
-    .tabs-list__item.active:before {
+    .price-tabs-list__item.active:before {
       position: absolute;
       content: '';
       width: 100%;
@@ -1735,7 +1931,7 @@ button:active{
       z-index: -1;
       border-radius: 6px;
     }
-    .tabs-list__item.active:after {
+    .price-tabs-list__item.active:after {
       content: '';
       position: absolute;
       width: 0;
@@ -1749,7 +1945,7 @@ button:active{
       border-bottom: 6px solid transparent;
       transform: rotate(-30deg);
     }
-      .tabs-list__item.active span:before {
+      .price-tabs-list__item.active span:before {
         position: absolute;
         content: '';
         width: 100%;
@@ -1760,7 +1956,7 @@ button:active{
         z-index: -2;
         border-radius: 6px;
       }
-      .tabs-list__item.active span:after {
+      .price-tabs-list__item.active span:after {
         content: '';
         position: absolute;
         width: 0;
@@ -1774,7 +1970,8 @@ button:active{
         border-bottom: 6px solid transparent;
         transform: rotate(-30deg);
       }
-.tabs__caption {
+.tabs__caption,
+.tabs__list {
   display: -webkit-flex;
   display: -moz-flex;
   display: -ms-flex;
@@ -1842,6 +2039,8 @@ button:active{
           font-size: 17px;
           margin: 0 8px;
           text-decoration: underline;
+          cursor: pointer;
+          
         }
 
           .price-pay__list-item {

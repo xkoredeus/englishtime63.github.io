@@ -1,3 +1,0 @@
-[2018-07-31 09:46:04] layer "       электронная почта: englishtime63@mail.ru": Unsupported extension: ru
-[2018-07-31 09:46:04] layer "       электронная почта: englishtime63@mail.ru": Unsupported extension: ru
-[2018-07-31 09:46:04] layer "footer__gmail.com": Unsupported extension: com

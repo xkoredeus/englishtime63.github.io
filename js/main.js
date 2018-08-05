@@ -1,7 +1,14 @@
 
 // //Clocks block
-// $( ".langs__clocks-item_spain" ).hover(function() {
-// $(".langs__clocks-arrow").toggleClass('spain');
+(function($) {
+$(function() {
+
+  $('.langs__clocks-item').mouseover(function() {
+      $(this).addClass('active').siblings().removeClass('active')
+  });
+
+});
+})(jQuery);
 
 //Benefits slider
 $(window).on('load', function (){
@@ -102,18 +109,22 @@ $(document).ready(function() {
   });
 });
 
-//Tabs
+//Outer Tabs
 (function($) {
 $(function() {
-
   $('ul.tabs__caption').on('click', 'li:not(.active)', function() {
     $(this)
       .addClass('active').siblings().removeClass('active')
-      .closest('.tabs').find('.tabs__content').removeClass('active').eq($(this).index()).addClass('active');
+      .closest('.tabs').find('.tabs__content-top').removeClass('active').eq($(this).index()).addClass('active');
   });
-
 });
 })(jQuery);
+//inner-tabs
+$(".tabs-content__item").not(":first").hide();
+$(".tabs-inner .tabs-list__item").click(function() {
+  $(".tabs-inner .tabs-list__item").removeClass("active").eq($(this).index()).addClass("active");
+  $(".tabs-content__item").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("active");
 
 //News slider
 $(window).on('load', function (){
