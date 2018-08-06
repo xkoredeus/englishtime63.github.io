@@ -113,7 +113,6 @@ $(document).ready(function() {
 $(document).ready(function () {
 $(".tab-content__item").hide();
 $(".tabs__container div.tab-content__item:first-child").show();
-.tabs-content__item
     $('ul.tabs__list > li').click(function () {
         if (!($(this).hasClass('active'))) {
             var thisLi = $(this);
