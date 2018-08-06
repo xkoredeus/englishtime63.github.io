@@ -721,20 +721,65 @@ button:active{
       min-height: 115px;
       width: 100%;
       margin-bottom: 30px;
-      -moz-transition: all 2.2s ease;
+      -moz-transition: all 1.7s ease;
       -webkit-transition-property: all;
-      -webkit-transition-duration: 2.2s;
+      -webkit-transition-duration: 1.7s;
       -webkit-transition-timing-function: ease;
       
       position: relative;
     }
-    .board__item-bg {
+    /* .board__item-bg {
         position: absolute;
         max-width: 1110px;
         height: 150px;
         background: url(../img/board__item-img_hover.png) no-repeat 50% 50% / contain;
-      }
+      } */
 
+      
+    .board__item-wrp {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      opacity: 0;
+      left: 0;
+      top: 0;
+      -moz-transition: all 1.2s ease;
+      -webkit-transition-property: all;
+      -webkit-transition-duration: 1.2s;
+      -webkit-transition-timing-function: ease;
+      -webkit-background-size: contain;
+      background-size: cover;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      -webkit-box-shadow: 0px 0px 29px 3px rgba(0,0,0,0.34);
+      -moz-box-shadow: 0px 0px 29px 3px rgba(0,0,0,0.34);
+      box-shadow: 0px 0px 29px 3px rgba(0,0,0,0.34);
+    }
+    .board__item-inner {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      border: 2px solid #333;
+      border-radius: 7px;
+      padding: 17px 0 17px 15px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: flex-start;
+      -ms-align-items: center;
+      align-items: center;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+      left: 0;
+      top: 0;
+      -moz-transition: all 1.2s ease;
+      -webkit-transition-property: all;
+      -webkit-transition-duration: 1.2s;
+      -webkit-transition-timing-function: ease;
+    }
       .board__item-img {
         /*z-index: -1;*/
         width: 35px;
@@ -779,10 +824,9 @@ button:active{
       .board__item-price {
         font-family: 'Century-Bold', sans-serif;
         text-transform: uppercase;
-        font-size: 0;
+        font-size: 3px;
         color: #fff;
         opacity: 0;
-        /* position: absolute; */
         z-index: -1;
         -moz-transition: all .6s ease;
         -webkit-transition-property: all;
@@ -794,83 +838,70 @@ button:active{
         }
       .board__item-btn {
         opacity: 0;
-        position: absolute;
         z-index: -1;
-        -moz-transition: all 0s ease;
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+        -moz-transition: all .6s ease;
         -webkit-transition-property: all;
-        -webkit-transition-duration: 0s;
+        -webkit-transition-duration: .6s;
         -webkit-transition-timing-function: ease;
       }
-    .board__item-inner {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      border: 2px solid #333;
-      border-radius: 7px;
-      padding: 17px 0 17px 15px;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: flex;
-      justify-content: flex-start;
-      -ms-align-items: center;
-      align-items: center;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      box-sizing: border-box;
-      left: 0;
-      top: 0;
-      -moz-transition: all 2.2s ease;
-      -webkit-transition-property: all;
-      -webkit-transition-duration: 2.2s;
-      -webkit-transition-timing-function: ease;
-    }
-      
-  .board__item:hover .board__item-inner{
-    width: 900px;
-    height: 100%;
-    left: 50%;
-    margin-left: -450px;
-    border: transparent;
-    background: url(../img/board__item-img_hover.png) no-repeat center center / contain;
-    padding: 23px 30px;
-    justify-content: space-between;
-  }
-    .board__item:hover .board__item-img {
-      width: 45px;
-      height: 45px;
-    }
-      .board__item:hover .board__item-img_1 {
-        background-image: url(../img/board__item-img_1-hover.png);
+
+      .board__item:hover .board__item-wrp {
+        opacity: 1;
+        width: 900px;
+        left: 50%;
+        margin-left: -450px;
       }
-      .board__item:hover .board__item-img_2 {
-        background-image: url(../img/board__item-img_2-hover.png);
+      .board__item:hover .board__item-inner{
+        width: 900px;
+        height: 100%;
+        left: 50%;
+        margin-left: -450px;
+        border: transparent;
+        padding: 23px 30px;
+        justify-content: space-between;
       }
-      .board__item:hover .board__item-img_3 {
-        background-image: url(../img/board__item-img_3-hover.png);
-      }
-      .board__item:hover .board__item-img_4 {
-        background-image: url(../img/board__item-img_4-hover.png);
-      }
-      .board__item:hover .board__item-img_5 {
-        background-image: url(../img/board__item-img_5-hover.png);
-      }
-    .board__item:hover .board__item-ttl {
-      color: #fff;
-    }
-    .board__item:hover .board__item-price {
-      position: relative;
-      font-size: 16px;
-      opacity: 1;
-      z-index: 1;
-      
-    }
-    .board__item:hover .board__item-btn {
-      position: relative;
-      opacity: 1;
-      z-index: 1;
-    }
+        .board__item:hover .board__item-img {
+          width: 45px;
+          height: 45px;
+        }
+          .board__item:hover .board__item-img_1 {
+            background-image: url(../img/board__item-img_1-hover.png);
+          }
+          .board__item:hover .board__item-img_2 {
+            background-image: url(../img/board__item-img_2-hover.png);
+          }
+          .board__item:hover .board__item-img_3 {
+            background-image: url(../img/board__item-img_3-hover.png);
+          }
+          .board__item:hover .board__item-img_4 {
+            background-image: url(../img/board__item-img_4-hover.png);
+          }
+          .board__item:hover .board__item-img_5 {
+            background-image: url(../img/board__item-img_5-hover.png);
+          }
+        .board__item:hover .board__item-ttl {
+          color: #fff;
+        }
+        .board__item:hover .board__item-price {
+          position: relative;
+          font-size: 16px;
+          opacity: 1;
+          z-index: 1;
+          
+        }
+        .board__item:hover .board__item-btn {
+          position: relative;
+          opacity: 1;
+          z-index: 1;
+          -webkit-transform: scale(1);
+          -ms-transform: scale(1);
+          -o-transform: scale(1);
+          transform: scale(1);
+        }
 .level {
   position: relative;
   padding-top: 0;
