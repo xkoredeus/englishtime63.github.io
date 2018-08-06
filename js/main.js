@@ -113,10 +113,7 @@ $(document).ready(function() {
 $(document).ready(function () {
 $(".tab-content__item").hide();
 $(".tabs__container div.tab-content__item:first-child").show();
-// $("ul.tabs__list li:first").addClass("active");
-// $("ul.price-pay-tabs__list li:first").addClass("active");
-
-
+.tabs-content__item
     $('ul.tabs__list > li').click(function () {
         if (!($(this).hasClass('active'))) {
             var thisLi = $(this);
@@ -149,4 +146,3 @@ $('.reviews__slider').owlCarousel({
       dots: true
   });
 });
-
