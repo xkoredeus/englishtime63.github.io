@@ -145,3 +145,8 @@ $('.reviews__slider').owlCarousel({
       dots: true
   });
 });
+
+//AOS animations
+$(document).ready(function () {
+  AOS.init();
+});

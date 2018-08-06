@@ -665,7 +665,7 @@ button:active{
   .who__bg {
     position: absolute;
     left: -100px;
-    top: -166px;
+    top: -79px;
     width: 120%;
     height: 660px;
     transform: rotate(3deg);
@@ -721,7 +721,10 @@ button:active{
       min-height: 115px;
       width: 100%;
       margin-bottom: 30px;
-
+      -moz-transition: all 2.2s ease;
+      -webkit-transition-property: all;
+      -webkit-transition-duration: 2.2s;
+      -webkit-transition-timing-function: ease;
       
       position: relative;
     }
@@ -739,6 +742,10 @@ button:active{
         background-repeat: no-repeat;
         background-position: 50% 50%;
         background-size: contain;
+        -moz-transition: all 0s ease;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0s;
+        -webkit-transition-timing-function: ease;
       }
         .board__item-img_1 {
           background-image: url(../img/board__item-img_1.png);
@@ -764,6 +771,10 @@ button:active{
         text-align: left;
         line-height: 1.4;
         width: 240px;
+        -moz-transition: all 0s ease;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0s;
+        -webkit-transition-timing-function: ease;
       }
       .board__item-price {
         font-family: 'Century-Bold', sans-serif;
@@ -771,8 +782,12 @@ button:active{
         font-size: 0;
         color: #fff;
         opacity: 0;
-        position: absolute;
+        /* position: absolute; */
         z-index: -1;
+        -moz-transition: all .6s ease;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: .6s;
+        -webkit-transition-timing-function: ease;
       }
         .board__item-price span {
           font-size: 24px;
@@ -781,6 +796,10 @@ button:active{
         opacity: 0;
         position: absolute;
         z-index: -1;
+        -moz-transition: all 0s ease;
+        -webkit-transition-property: all;
+        -webkit-transition-duration: 0s;
+        -webkit-transition-timing-function: ease;
       }
     .board__item-inner {
       width: 100%;
@@ -802,9 +821,9 @@ button:active{
       box-sizing: border-box;
       left: 0;
       top: 0;
-      -moz-transition: all 1s ease;
+      -moz-transition: all 2.2s ease;
       -webkit-transition-property: all;
-      -webkit-transition-duration: 1s;
+      -webkit-transition-duration: 2.2s;
       -webkit-transition-timing-function: ease;
     }
       
@@ -814,24 +833,13 @@ button:active{
     left: 50%;
     margin-left: -450px;
     border: transparent;
-    
-  }
-  .board__item:hover .board__item-inner{
     background: url(../img/board__item-img_hover.png) no-repeat center center / contain;
     padding: 23px 30px;
     justify-content: space-between;
-    -moz-transition: all 1.2s ease;
-    -webkit-transition-property: all;
-    -webkit-transition-duration: 1.2s;
-    -webkit-transition-timing-function: ease;
   }
     .board__item:hover .board__item-img {
       width: 45px;
       height: 45px;
-      -moz-transition: all 0.5s ease;
-      -webkit-transition-property: all;
-      -webkit-transition-duration: 0.5s;
-      -webkit-transition-timing-function: ease;
     }
       .board__item:hover .board__item-img_1 {
         background-image: url(../img/board__item-img_1-hover.png);
@@ -850,29 +858,18 @@ button:active{
       }
     .board__item:hover .board__item-ttl {
       color: #fff;
-      -moz-transition: all 1s ease;
-      -webkit-transition-property: all;
-      -webkit-transition-duration: 1s;
-      -webkit-transition-timing-function: ease;
     }
     .board__item:hover .board__item-price {
       position: relative;
       font-size: 16px;
       opacity: 1;
       z-index: 1;
-      -moz-transition: all .7s ease;
-      -webkit-transition-property: all;
-      -webkit-transition-duration: .7s;
-      -webkit-transition-timing-function: ease;
+      
     }
     .board__item:hover .board__item-btn {
       position: relative;
       opacity: 1;
       z-index: 1;
-      -moz-transition: all .7s ease;
-      -webkit-transition-property: all;
-      -webkit-transition-duration: .7s;
-      -webkit-transition-timing-function: ease;
     }
 .level {
   position: relative;
