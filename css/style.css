@@ -743,6 +743,7 @@ button:active{
       opacity: 0;
       left: 0;
       top: 0;
+      border-radius: 7px;
       -moz-transition: all 1.2s ease;
       -webkit-transition-property: all;
       -webkit-transition-duration: 1.2s;
@@ -854,6 +855,7 @@ button:active{
         width: 900px;
         left: 50%;
         margin-left: -450px;
+        transform: scale(1.2);
       }
       .board__item:hover .board__item-inner{
         width: 900px;
@@ -1046,7 +1048,7 @@ button:active{
         }
           .level__stairs-item-cnt {
             z-index: 5;
-            padding: 100px 21px;
+            padding: 80px 14px 80px 20px;
             display: -webkit-flex;
             display: -moz-flex;
             display: -ms-flex;
@@ -1060,17 +1062,19 @@ button:active{
             justify-content: center;
             -ms-align-items: center;
             align-items: center;
-            max-width: 150px;
+            max-width: 155px;
           }
             .level__stairs-item:nth-child(3) .level__stairs-item-cnt {
-              padding-top: 180px;
+              padding-top: 143px;
             }
             .level__stairs-item-ttl {
-              font-size: 20px;
+              font-size: 13px;
               text-align: center;
               text-transform: uppercase;
+              font-weight: 600;
+              line-height: 1.3;
               margin-bottom: 15px;
-              
+              text-align: right;
             }
           .level__stairs-item:nth-child(1) {
             width: 340px;
@@ -1100,6 +1104,9 @@ button:active{
     }
       .level__bottom-ttl .section__title {
         text-align: right;
+      }
+      .level__bottom-ttl .section__descr {
+        font-size: 18px;
       }
 
 .register {
@@ -2446,6 +2453,7 @@ button:active{
             }
 .reviews {
   position: relative;
+  margin-bottom: 60px;
 }
   .reviews__bg {
     position: absolute;
