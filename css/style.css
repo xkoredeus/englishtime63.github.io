@@ -1730,6 +1730,9 @@ button:active{
             font-size: 14px;
             font-family: 'Century-Bold';
             text-transform: uppercase;
+            
+          }
+          .teachers__item-group {
             margin-bottom: 40px;
           }
           .teachers__item .teachers__adv {
